@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { ShellComponent } from './shell/shell.component';
 
@@ -22,6 +23,8 @@ import { ShellComponent } from './shell/shell.component';
 const components = [ShellComponent];
 
 const modules = [
+  CommonModule,
+  RouterModule,
   LayoutModule,
   MatButtonModule,
   MatToolbarModule,
@@ -32,14 +35,13 @@ const modules = [
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatSliderModule
 ]
 
 @NgModule({
   declarations: [...components],
   imports: [
-    CommonModule,
-    RouterModule,
     StoreModule.forRoot({}, {}),
     ...modules
   ],
