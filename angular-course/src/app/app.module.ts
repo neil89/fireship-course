@@ -14,6 +14,7 @@ import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore'
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    StoreModule.forRoot({}, {}),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule
