@@ -1,7 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS"
+    "outDir": "./out-tsc/spec",
+    "module": "CommonJS",
+    "types": ["jest"]
   },
   "includes": ["src/**/*.spec.ts"],
   "exclude": ["e2e", "examples", "website"]

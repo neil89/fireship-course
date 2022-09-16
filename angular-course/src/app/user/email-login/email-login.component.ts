@@ -6,13 +6,13 @@ import {
 } from '@angular/forms';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 
+type FormType = 'login' | 'signup' | 'reset';
 @Component({
   selector: 'app-email-login',
   templateUrl: './email-login.component.html',
   styleUrls: ['./email-login.component.scss']
 })
 
-type FormType = 'login' | 'signup' | 'reset';
 
 export class EmailLoginComponent implements OnInit {
 
